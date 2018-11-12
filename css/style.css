@@ -1,0 +1,393 @@
+/* POLICES */
+
+@font-face {
+    font-family: 'aniron';
+    src: url('../fonts/anirm___.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'party';
+    src: url('../fonts/partybusiness.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'twengar';
+    src: url('../fonts/tngan.ttf') format('truetype');
+}
+
+
+
+/* BODY */
+
+body {
+    min-width: 320px;
+    width: auto;
+}
+
+
+
+/* MENU */
+
+.navbar-default {
+    border: 0px;
+}
+
+.navbar {
+    border-radius: 0px;
+}
+
+.burger {
+    background-color: #F7550A;
+    margin: 0;
+}
+
+.navbar-nav {
+    font-size: 1.5em;
+    position: relative;
+    font-family: aniron;
+    color: white;
+    margin: 0;
+}
+
+.nav.main_menu>li>a {
+    color: white;
+}
+
+.nav.main_menu li a:focus,
+.nav.main_menu li a:hover {
+    background-color: transparent;
+    text-decoration: underline;
+    color: white;
+}
+
+.navbar-text {
+    margin-left: 0;
+    margin-right: 0
+}
+
+
+
+/* CAROUSEL */
+
+.carousel-caption {
+    top: 30%;
+    bottom: auto;
+}
+
+h1 {
+    font-size: 4.5em;
+    font-family: party;
+    font-weight: bold;
+}
+
+.carousel p {
+    font-size: 3em;
+    font-family: party;
+}
+
+
+
+/* PILLS */
+
+.balises_twengar {
+    color: #F7550A;
+    font-family: twengar
+}
+
+
+.effet-pills {
+    color: #F7550A;
+    font-family: twengar;
+    font-size: 1.1em;
+    visibility: hidden;
+}
+
+.nav.nav_onglet>li>a:hover .effet-pills {
+    visibility: visible;
+}
+
+
+.nav.nav_onglet>li>a {
+    font-size: 1.5em;
+    font-family: aniron;
+    color: #635A5A;
+}
+
+
+
+.nav.nav_onglet>li>a:hover {
+    color: #F7550A;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.liens_pills {
+    width: 80%;
+    margin: auto;
+}
+
+
+h2 {
+    margin-top: 5%;
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+    font-family: aniron;
+}
+
+.sous_titre_h2 {
+    font-size: 0.8em;
+}
+
+
+
+/* PORTRAITS */
+
+.section_pills,
+.section_portrait {
+    background-image: url(../img/bg_light.png)
+}
+
+.thumbnail,
+.portrait {
+    background-color: black;
+}
+
+.name {
+    font-size: 600%;
+    position: absolute;
+    top: 35%;
+    width: 80%;
+    left: 10%;
+    right: 70%;
+    font-family: party;
+    text-align: center;
+    color: white;
+}
+
+.name_gimli {
+    font-size: 700%;
+    position: absolute;
+    top: 35%;
+    width: 80%;
+    left: 10%;
+    right: 70%;
+    font-family: party;
+    text-align: center;
+    color: white;
+    text-decoration: line-through;
+    -webkit-text-decoration-color: red;
+    text-decoration-color: red;
+}
+
+.photo_portrait {
+    width: 100%;
+    height: auto;
+    opacity: 0.4;
+}
+
+.reward {
+    font-size: 300%;
+    font-family: party;
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    right: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+    width: 80%;
+    color: black;
+    border-radius: 20px;
+    background-color: rgba(245, 236, 236, 0.7);
+}
+
+.reward span {
+    color: #F7550A;
+}
+
+.dead {
+    font-size: 5vw;
+    ;
+    font-family: party;
+    position: absolute;
+    top: 5%;
+    left: 8%;
+    right: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+    width: 80%;
+    color: red;
+}
+
+.thumbnail:hover .photo_portrait {
+    opacity: 1
+}
+
+.thumbnail:hover .reward,
+.thumbnail:hover .dead {
+    display: none;
+}
+
+.thumbnail:hover .name,
+.thumbnail:hover .name_gimli {
+    font-size: 400%;
+    top: 60%
+}
+
+.legend_portrait {
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-family: party;
+    font-size: 1.7em;
+    height: 4em;
+    margin-top: 1.5vw;
+}
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width:515px) {
+    .carousel-caption {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:768px) {
+
+    .navbar-default .navbar-collapse,
+    .navbar-default .navbar-form {
+        border: 0;
+    }
+
+    .main_menu {
+        font-size: 15px;
+        margin: 0;
+    }
+
+
+
+    .dead {
+        font-size: 9vw;
+        ;
+        font-family: party;
+        position: absolute;
+        top: 5%;
+        left: 8%;
+        right: 10%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        text-align: center;
+        width: 80%;
+        color: red;
+    }
+
+    h1,
+    h2 {
+        font-size: 1.2em;
+    }
+
+    .navbar-text {
+        visibility: hidden;
+        margin: 0;
+        height: 0;
+    }
+
+    .balises_twengar {
+        color: #F7550A;
+        font-family: twengar
+    }
+
+
+    .effet-pills {
+        color: #F7550A;
+        font-family: twengar;
+        font-size: 1.1em;
+        visibility: hidden;
+    }
+
+    .nav.nav_onglet>li>a:hover .effet-pills {
+        visibility: visible;
+    }
+
+
+    .nav.nav_onglet>li>a {
+        font-size: 1.2em;
+        font-family: aniron;
+        color: #635A5A;
+    }
+
+    .nav.nav_onglet>li>a:hover {
+        color: #F7550A;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+
+    .liens_pills {
+        width: 80%;
+        margin: auto;
+    }
+
+    .nav {
+        font-size: 3vw;
+        left: 3%;
+    }
+
+    .carousel p {
+        font-size: 4vw;
+    }
+
+    .carousel h1 {
+        font-size: 5vw;
+    }
+}
+
+@media only screen and (max-width:915px) {
+
+    .logo2 {
+        height: 90%;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width:992px) {
+    .name,
+    .name_gimli {
+        font-size: 2em;
+    }
+
+    .legend_portrait,
+    .reward {
+        font-size: 200%;
+    }
+
+    .thumbnail:hover .name,
+    .thumbnail:hover .name_gimli {
+        font-size: 300%;
+        top: 50%
+    }
+}
+
+@media only screen and (max-width:1025px) {
+    .carousel-caption {
+        top: 20%;
+        bottom: auto;
+    }
+}
+
+@media only screen and (max-width:1280px) {
+    .main_menu {
+        font-size: 10px;
+        margin: 0;
+    }
+
+    .logo2 {
+        height: 120%;
+        padding: 0;
+        margin: 0;
+    }
+}
